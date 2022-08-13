@@ -65,9 +65,7 @@ def change_flag(flag):
     i = 0
     for line in ori.readlines():
         if(i == 2):
-            data = line.split()
-            data.append(" "+flag)
-            mod.writelines("".join(data)+"\n")
+            mod.writelines("CFLAGS = -lm -lrt "+flag+"\n")
         else:
             mod.writelines(line)
         i = i + 1
