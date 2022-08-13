@@ -5,9 +5,9 @@ p_CHeterodyning_threaded = "/home/pi/EEE3096S-2022/WorkPackage1/C/src/CHeterodyn
 p_CHeterodyning_threaded_bak = "/home/pi/EEE3096S-2022/WorkPackage1/C/src/CHeterodyning_threaded.h.bak"
 temp_file = "/home/pi/EEE3096S-2022/WorkPackage1/C/src/temp"
 
-p11 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/p11.cvs"
-c12 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/c12.cvs"
-c14 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/c14.cvs"
+p11 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/p11.csv"
+c12 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/c12.csv"
+c14 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/c14.csv"
 
 samples = 10
 

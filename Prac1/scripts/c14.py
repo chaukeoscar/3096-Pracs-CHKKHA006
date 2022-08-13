@@ -2,8 +2,8 @@ import sys
 sys.path.insert(0, '/home/pi/3096-Pracs-CHKKHA006/Prac1/scripts')
 import optlib
 
-threads = [1, 2]
-
+threads = [1, 2, 4, 8, 16, 32]
+f = open(optlib.c14, "w")
 for thread in threads:
     optlib.change_thread(thread);
     optlib.run_cmd("make threaded")
@@ -17,7 +17,6 @@ for thread in threads:
         ave = ave + dur
         print("Test "+str(i+1)+"took "+str(dur)+" ms")
     ave = ave/optlib.samples
-
-    f = open(optlib.c14, "w")
     f.writelines(''.join(data)+"\n")
-    f.close()
+    
+f.close()
