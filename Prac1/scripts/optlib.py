@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-make_file = "/home/pi/EEE3096S-2022/WorkPackage1/C/make"
+make_file = "/home/pi/EEE3096S-2022/WorkPackage1/C/makefile"
 make_file_bak = "/home/pi/EEE3096S-2022/WorkPackage1/C/make_temp"
 
 p_CHeterodyning_threaded = "/home/pi/EEE3096S-2022/WorkPackage1/C/src/CHeterodyning_threaded.h"
@@ -62,6 +62,17 @@ def change_flag(flag):
     ori = open(make_file,"r")
     mod = open(make_file_bak,"w")
 
-
+    i = 0
+    for line in ori.readlines():
+        if(i == 2):
+            data = line.split()
+            data.append(" "+flag)
+            mod.writelines("".join(data)+"\n")
+        else:
+            mod.writelines(line)
+        i = i + 1
+    ori.close()
+    mod.close()
+    swap_file(make_file, make_file_bak)
     f_done("Flag", flag)
 

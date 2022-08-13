@@ -18,7 +18,7 @@ for thread in threads:
         print("Test "+str(i+1)+" took "+str(dur)+" ms")
     ave = ave/optlib.samples
     data.append(str(ave)+',')
-    print("Average over "+optlib.samples+" is "+ave)
+    print("Average over "+str(optlib.samples)+" is ",ave)
     f.writelines(''.join(data)+"\n")
 
 f.close()
