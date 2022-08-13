@@ -7,7 +7,7 @@ temp_file = "/home/pi/EEE3096S-2022/WorkPackage1/C/src/"
 
 p11 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/p11.cvs"
 c12 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/c12.cvs"
-c14 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/c12.cvs"
+c14 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/c14.cvs"
 
 samples = 10
 
