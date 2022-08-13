@@ -7,7 +7,7 @@ temp_file = "/home/pi/EEE3096S-2022/WorkPackage1/C/src/temp"
 
 p11 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/p11.cvs"
 c12 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/c12.cvs"
-c14 = "/home/pi/oscar/3096-Pracs-CHKKHA006/Prac1/data/c14.cvs"
+c14 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/c14.cvs"
 
 samples = 10
 
@@ -17,7 +17,7 @@ def run_cmd(cmd):
     p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     (out, err) = p.communicate()
     if(err.decode("utf-8")!=''):
-        print("Something went wrong")
+        print("Something went wrong \n"+err.decode("utf-8"))
     return out
 
 # Print status
@@ -42,7 +42,8 @@ def change_thread(thread):
     for line in ori.readlines():
         if i==14:
             mod.writelines("#define Thread_Count "+str(thread)+"\n")
-        mod.writelines(line)
+        else:
+            mod.writelines(line)
         i = i + 1
     
     ori.close()
