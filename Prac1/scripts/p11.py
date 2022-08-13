@@ -1,9 +1,12 @@
+import sys
+sys.path.insert(0, '/home/pi/3096-Pracs-CHKKHA006/Prac1/scripts')
 import optlib
 
 print("*"*50)
 print("Preparing python heterodyning benchmark")
 print("*"*50)
 
+ave = 0.0
 f = open(optlib.p11, "w")
 for i in range(optlib.samples):
     dur = float(optlib.run_cmd("python3 PythonHeterodyning.py").split()[23].decode("utf-8").split(':')[2])

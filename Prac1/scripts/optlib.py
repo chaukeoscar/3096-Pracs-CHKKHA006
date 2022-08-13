@@ -16,7 +16,7 @@ samples = 10
 def run_cmd(cmd):
     p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     (out, err) = p.communicate()
-    if(err!=''):
+    if(err.decode("utf-8")!=''):
         print("Something went wrong")
     return out
 
@@ -28,7 +28,6 @@ def f_done(param, input):
 
 # Swap file name
 def swap_file(file1, file2):
-
     os.rename(file1, temp_file)
     os.rename(file2, file1)
     os.rename(temp_file, file2)
