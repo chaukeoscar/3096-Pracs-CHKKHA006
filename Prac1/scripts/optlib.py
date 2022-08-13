@@ -3,11 +3,11 @@ import subprocess
 
 p_CHeterodyning_threaded = "/home/pi/EEE3096S-2022/WorkPackage1/C/src/CHeterodyning_threaded.h"
 p_CHeterodyning_threaded_bak = "/home/pi/EEE3096S-2022/WorkPackage1/C/src/CHeterodyning_threaded.h.bak"
-temp_file = "/home/pi/EEE3096S-2022/WorkPackage1/C/src/"
+temp_file = "/home/pi/EEE3096S-2022/WorkPackage1/C/src/temp"
 
 p11 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/p11.cvs"
 c12 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/c12.cvs"
-c14 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/c14.cvs"
+c14 = "/home/pi/oscar/3096-Pracs-CHKKHA006/Prac1/data/c14.cvs"
 
 samples = 10
 
@@ -46,7 +46,7 @@ def change_thread(thread):
         i = i + 1
     
     ori.close()
-    ori.close()
+    mod.close()
 
     swap_file(p_CHeterodyning_threaded_bak, p_CHeterodyning_threaded)
     f_done("Thread", thread)

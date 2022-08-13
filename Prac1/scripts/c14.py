@@ -2,7 +2,7 @@ import sys
 sys.path.insert(0, '/home/pi/3096-Pracs-CHKKHA006/Prac1/scripts')
 import optlib
 
-threads = [1, 2]
+threads = [10, 2]
 
 for thread in threads:
     optlib.change_thread(thread);
