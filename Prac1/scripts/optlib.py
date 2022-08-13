@@ -13,7 +13,7 @@ p11 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/p11.csv"
 c12 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/c12.csv"
 c14 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/c14.csv"
 c16 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/c16.csv"
-c16 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/c18.csv"
+c18 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/c18.csv"
 
 samples = 10
 
