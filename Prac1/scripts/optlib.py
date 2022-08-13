@@ -1,6 +1,9 @@
 import os
 import subprocess
 
+make_file = "/home/pi/EEE3096S-2022/WorkPackage1/C/make"
+make_file_bak = "/home/pi/EEE3096S-2022/WorkPackage1/C/make_temp"
+
 p_CHeterodyning_threaded = "/home/pi/EEE3096S-2022/WorkPackage1/C/src/CHeterodyning_threaded.h"
 p_CHeterodyning_threaded_bak = "/home/pi/EEE3096S-2022/WorkPackage1/C/src/CHeterodyning_threaded.h.bak"
 temp_file = "/home/pi/EEE3096S-2022/WorkPackage1/C/src/temp"
@@ -8,6 +11,7 @@ temp_file = "/home/pi/EEE3096S-2022/WorkPackage1/C/src/temp"
 p11 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/p11.csv"
 c12 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/c12.csv"
 c14 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/c14.csv"
+c16 = "/home/pi/3096-Pracs-CHKKHA006/Prac1/data/c16.csv"
 
 samples = 10
 
@@ -54,6 +58,10 @@ def change_thread(thread):
 
 # Change flags
 def change_flag(flag):
+
+    ori = open(make_file,"r")
+    mod = open(make_file_bak,"w")
+
 
     f_done("Flag", flag)
 

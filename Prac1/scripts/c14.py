@@ -15,8 +15,10 @@ for thread in threads:
         dur = float(optlib.run_cmd("make run_threaded").split()[19].decode("utf-8"))
         data.append(str(dur)+',')
         ave = ave + dur
-        print("Test "+str(i+1)+"took "+str(dur)+" ms")
+        print("Test "+str(i+1)+" took "+str(dur)+" ms")
     ave = ave/optlib.samples
+    data.append(str(ave)+',')
+    print("Average over "+optlib.samples+" is "+ave)
     f.writelines(''.join(data)+"\n")
-    
+
 f.close()
