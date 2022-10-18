@@ -1,0 +1,7 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EEE3096S_2022_Prac_4_PWM_DAC_Student_Version Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EEE3096S_2022_Prac_4_PWM_DAC_Student_Version\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EEE3096S_2022_Prac_4_PWM_DAC_Student_Version\ Debug/activeLaunchTarget=null\:---
